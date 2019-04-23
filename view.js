@@ -13,8 +13,8 @@ view2048 = {
     this.$grid = $("#grid-2048");
     this.$grid.empty();
     for( var i = 0; i < this.model.numSquares ; i++ ) {
-      var value = this.model.values[i];
-      //var value = this.model.values[i] || "";
+      var value = this.model.values[i] || "&nbsp";
+      console.log(value);
       var $square = $("<div><div class='value'>" + value + "</div></div>");
       $square.addClass("square");
       this.$grid.append($square);
