@@ -12,6 +12,7 @@
 }
 
 .square .value{
+  font-weight: 18px;
   text-align: center;
   transform: translateY(200%);
 }

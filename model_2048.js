@@ -27,7 +27,7 @@ model2048 = {
       if( this.values[i] === 0 ) zeroes.push(i);
     }
     var rand = Math.floor( Math.random() * zeroes.length );
-    var newValue = Math.random() < 0.9 ? 2 : 4;
+    var newValue = ( Math.random() < 0.9 ? 2 : 4 );
     this.values[rand] = newValue;
   },
 
@@ -46,7 +46,7 @@ model2048 = {
       } );
       var newRow = this.collapseRow( currentRow );
       for( var ai = 0; ai < arr.length ; ai++ ) {
-        this.values[ arr[ai] ] = newRow[ai] ? newRow[ai] : 0;
+        this.values[ arr[ai] ] = ( newRow[ai] ? newRow[ai] : 0 );
       }
     }
   },
